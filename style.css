@@ -10,10 +10,10 @@ h1 {
   padding:1%;
 }
 #logo1{
-  width:80px;
+  width:25px;
 }
 #logo2{
-  width:80px;
+  width:50px;
 }
 .div1{
   position: absolute; 
@@ -28,7 +28,10 @@ h1 {
   width: 50%;
 }
 #bground1{
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 #top-text{
   text-align: center;
@@ -52,7 +55,10 @@ h1 {
   background-color:#ddd;
 }
 #bground2{
+   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 #input-box{
   color:green; 
