@@ -1,0 +1,113 @@
+h1 {
+  color: gold;
+}
+.looks{
+  background-color:#ddd;
+}
+#table-style{
+  background:coral;
+  width:100%; 
+  padding:1%;
+}
+#logo1{
+  width:30px;
+}
+#logo2{
+  width:30px;
+}
+.div1{
+  position: absolute; 
+  top: 18pt; 
+  right: 20pt;
+   z-index: 100;
+ }
+#banner1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#bground1{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#top-text{
+  text-align: center;
+}
+.table-form{
+  margin-left: auto;
+  margin-right: auto; 
+  padding:5%; 
+  margin-top:20px; 
+  background-color:#fff;
+}
+#table-entry{
+  margin-left:auto;
+  margin-right:auto;
+  padding:5%; 
+  width:80%; 
+  margin-top:20px; 
+  background-color:#fff;
+}
+#bgcolor{
+  background-color:#ddd;
+}
+#bground2{
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#input-box{
+  color:green; 
+  text-align:center;
+  width: 800px;
+  height: 60px;
+}
+.input-box2{
+  font-weight: bold;
+}
+.entry-add{
+  border-color: #000;
+  background-color: #88D0FE;
+  color: #000;
+  font-size: 20px;
+  height: 60px;
+}
+.table-home{
+  margin-left: auto;
+  margin-right: 
+  auto;
+  padding:5%; 
+  width:80%; 
+  margin-top:20px; 
+  background-color:#fff;
+}
+#div4{
+  position: absolute;
+  left: 880px;
+  top: 185px;
+}
+.profile-entry{
+  margin-left: 150pt;
+  padding:5%; 
+  width:50;
+  margin-top:20px; 
+  background-color:white;
+}
+.profile-set{
+  margin-left: 150pt;
+  padding:5%; 
+  width:50;
+  margin-top:20px; 
+  background-color:white;
+}
+#sett-btn{
+  font-size:25px;
+}
+footer{
+  text-decoration-color:blue;
+  text-align:center;
+}
