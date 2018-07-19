@@ -1,0 +1,33 @@
+{
+  "name": "mydiary",
+  "version": "1.0.0",
+  "description": "An app to help users jot down their thoughts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvis-o/MyDiary.git"
+  },
+  "keywords": [
+    "mydiary",
+    "elvis",
+    "nodejs"
+  ],
+  "author": "Elvis Ekhator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elvis-o/MyDiary/issues"
+  },
+  "homepage": "https://github.com/elvis-o/MyDiary#readme",
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0"
+  },
+  "script" : {
+    "test" : "mocha"
+  }
+}
