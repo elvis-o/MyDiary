@@ -7,13 +7,19 @@ var entries = [
 	{id: 2, title: "Second day at work", details : "Second day at work ... more details here"}
 ];
 
+var urlencodedParser = bodyParser.urlencoded({extended: false});
+
 app.listen(3000);
 console.log('Node development server started on port 3000');
+
+
 
 //api to get all entries
 app.get('/api/v1/entries', function(req, res){
 	res.json(entries);
 });
+
+
 
 
 //api to get entries by id
@@ -30,8 +36,10 @@ app.get('/api/v1/entries/:entryId', function(req, res){
 	res.json(result);
 });
 
+
+
 //dont forget to require the response-body node module
-app.post('/api/v1/entries', responseBody, function(req, res){
+app.post('/api/v1/entries', urlencodedParser, function(req, res){
 	if(req.body.id !=="" && req.body.title !=="" && req.body.details !==""){
 		entries.push(req.body);
 		res.json(entries);
@@ -41,8 +49,10 @@ app.post('/api/v1/entries', responseBody, function(req, res){
 });
 
 
+
+
 //dont forget to require the response-body node module
-app.put('/api/v1/entries/:entryId', responseBody , function(req, res){
+app.put('/api/v1/entries/:entryId', urlencodedParser , function(req, res){
 
 	entries.forEach(function(entry){
 		if(entry.id == req.params.entryId){

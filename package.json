@@ -22,12 +22,13 @@
   },
   "homepage": "https://github.com/elvis-o/MyDiary#readme",
   "devDependencies": {
+    "body-parser": "^1.18.3",
     "eslint": "^5.1.0",
     "eslint-config-airbnb": "^17.0.0",
     "express": "^4.16.3",
     "mocha": "^5.2.0"
   },
-  "script" : {
-    "test" : "mocha"
+  "script": {
+    "test": "mocha"
   }
 }
