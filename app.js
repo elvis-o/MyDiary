@@ -1,4 +1,5 @@
 var express = require('express');
+
 var bodyParser = require('body-parser');
 var controller = require('./controller.js');
 var app = express();
@@ -8,9 +9,11 @@ var apiRoutes = require('./router');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+
 app.use('/api', apiRoutes);
 
-r
+app.use('/api', apiRoutes);
+
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
