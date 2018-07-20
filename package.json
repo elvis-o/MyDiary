@@ -4,7 +4,7 @@
   "description": "An app to help users jot down their thoughts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,12 +23,13 @@
   "homepage": "https://github.com/elvis-o/MyDiary#readme",
   "devDependencies": {
     "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
     "eslint": "^5.1.0",
     "eslint-config-airbnb": "^17.0.0",
     "express": "^4.16.3",
-    "mocha": "^5.2.0"
-  },
-  "scripts": {
-    "test": "mocha"
+    "mocha": "^5.2.0",
+    "request": "^2.87.0",
+    "should": "^13.2.1"
   }
 }
