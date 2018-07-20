@@ -22,7 +22,15 @@ describe('/GET entries', () => {
       });
   });
 
-
-
+describe('/GET entries', () => {
+      it('it should GET an Endty by its ID', (done) => {
+        chai.request(server)
+            .get('/api/v1/entries/3')
+            .end((err, res) => {
+                assert.equal(res.body.entry.id,3);
+              done();
+            });
+      });
+  });
 
 
