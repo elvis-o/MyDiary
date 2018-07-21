@@ -1,9 +1,7 @@
-https://travis-ci.org/elvis-o/MyDiary.svg?branch=develop
-
-https://coveralls.io/repos/github/elvis-o/MyDiary/badge.png?branch=master)](https://coveralls.io/github/elvis-o/MyDiary?branch=master)
-
-codeclimate.com/github/elvis-o/terminal-diary/maintainability"><img src="https://api.codeclimate.com/v1/badges/a45c9de889874d5da511/maintainability" /></a>
-
++# MyDiary
++![Travis CI Build Status](https://travis-ci.org/elvis-o/MyDiary.svg?branch=deploy)
++[![Test Coverage](https://api.codeclimate.com/v1/badges/2b023799b47b010d9ea6/test_coverage)](https://codeclimate.com/github/elvis-o/MyDiary/test_coverage)
++[![Coverage Status](https://coveralls.io/repos/github/elvis-o/MyDiary/badge.svg?branch=deploy)](https://coveralls.io/github/elvis-o/MyDiary?branch=deploy)
 
 # MyDiary
 MyDiary is an online journal where users can pen down their thoughts and feelings.
