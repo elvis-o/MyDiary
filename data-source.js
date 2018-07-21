@@ -7,8 +7,8 @@ var entries = [
 var endpointLists = [
 {title : "Endpoint to retireve all entries", type: "GET", url : "https://elvis-o-diary-app.herokuapp.com/api/v1/entries"},
 {title : "Endpoint to get entry by id", type: "GET" , url : "https://elvis-o-diary-app.herokuapp.com/api/v1/entries/entryID"},
-{title : "Endpoint to retireve all entries", type: "POST" , url : "https://elvis-o-diary-app.herokuapp.com/api/v1/entries"},
-{title : "Endpoint to retireve all entries", type: "PUT" , url : "https://elvis-o-diary-app.herokuapp.com/api/v1/entries/entryID"}
+{title : "Endpoint to create a new entry", type: "POST" , url : "https://elvis-o-diary-app.herokuapp.com/api/v1/entries"},
+{title : "Endpoint to update an entry by its ID", type: "PUT" , url : "https://elvis-o-diary-app.herokuapp.com/api/v1/entries/entryID"}
 ];
 
 module.exports = {
