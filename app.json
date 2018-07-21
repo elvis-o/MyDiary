@@ -1,0 +1,11 @@
+{
+  "name": "mydiary",
+  "description": "This is a myDiary project",
+  "repository": "https://github.com/elvis-o/MyDiary.git",
+  "logo": "http://node-js-simple.herokuapp.com/node.svg",
+  "keywords": [
+    "MyDiary",
+    "Elvis"
+  ],
+  "image": "heroku/nodejs"
+}
