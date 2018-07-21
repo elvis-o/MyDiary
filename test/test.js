@@ -33,4 +33,15 @@ describe('/GET entries', () => {
       });
   });
 
+  describe('/GET entries', () => {
+        it('it should GET all the diary Entries', (done) => {
+          chai.request(server)
+              .post('/api/v1/entries')
+              .end((err, res) => {
+                  assert.equal(res.body[0].id,1);
+                done();
+              });
+        });
+    });
+
 
