@@ -21,6 +21,17 @@
     "url": "https://github.com/elvis-o/MyDiary/issues"
   },
   "homepage": "https://github.com/elvis-o/MyDiary#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "request": "^2.87.0",
+    "should": "^13.2.1"
+  },
   "devDependencies": {
     "body-parser": "^1.18.3",
     "chai": "^4.1.2",
