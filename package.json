@@ -4,7 +4,8 @@
   "description": "An app to help users jot down their thoughts",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node your-script.js"
   },
   "repository": {
     "type": "git",
