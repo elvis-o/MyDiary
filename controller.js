@@ -1,11 +1,16 @@
 var dataSource = require('./data-source.js');
 var entries = dataSource.entries;
+var endpointList = dataSource.endpointLists;
 
 var sendJSONResponse = function(res, status, content) {
     res.status(status);
     res.json(content);
 };
 
+
+indexApp = function(req, res) {
+    sendJSONResponse(res, 200, endpointList);
+};
 
 getAllEntries = function(req, res) {
     sendJSONResponse(res, 200, entries);
@@ -58,5 +63,6 @@ module.exports = {
   getAllEntries: getAllEntries,
   getEntryById : getEntryById,
   createNewEntry: createNewEntry,
-  editEntry : editEntry
+  editEntry : editEntry,
+  indexApp : indexApp
 };
