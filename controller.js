@@ -36,10 +36,27 @@ createNewEntry = function(req, res) {
 };
 
 
+editEntry = function(req, res){
+
+  if(req.params.entryId == ""){
+    sendJSONResponse(res, 200, {status: "failed", message: "insert an entry ID"});
+  }else{
+
+    entries.forEach(function(entry){
+      if(entry.id == req.params.entryId){
+        entry.title = req.body.title;
+        entry.details = req.body.details;
+        sendJSONResponse(res, 200, {status: "success", message: "entry updated", entry: entry});
+      }
+    });
+    sendJSONResponse(res, 200, {status: "failed", message: "entry id did not match any entry"});
+  }
+};
 
 
 module.exports = {
   getAllEntries: getAllEntries,
   getEntryById : getEntryById,
-  createNewEntry: createNewEntry
+  createNewEntry: createNewEntry,
+  editEntry : editEntry
 };
