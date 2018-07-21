@@ -33,8 +33,8 @@ describe('/GET entries', () => {
       });
   });
 
-  describe('/GET entries', () => {
-        it('it should GET all the diary Entries', (done) => {
+  describe('/POST new  entry', () => {
+        it('it should create a new entry', (done) => {
           chai.request(server)
               .post('/api/v1/entries')
               .end((err, res) => {
@@ -44,4 +44,13 @@ describe('/GET entries', () => {
         });
     });
 
-
+describe('/PUT update entry', () => {
+      it('it should GET an entry and update its properties', (done) => {
+        chai.request(server)
+            .put('/api/v1/entries/abcd')
+            .end((err, res) => {
+                assert.equal(res.body.status, "failed");
+              done();
+            });
+      });
+  });
