@@ -25,9 +25,21 @@ getEntryById = function(req, res) {
 };
 
 
+createNewEntry = function(req, res) {
+  var data = req.body;
+  if(data.id !== "" && data.title !== "" && data.details !== ""){
+    entries.push(req.body);
+    sendJSONResponse(res, 200, entries);
+  }else{
+    sendJSONResponse(res, 200, {status: "failed", message: "some fields are empty"});
+  }
+};
+
+
 
 
 module.exports = {
   getAllEntries: getAllEntries,
-  getEntryById : getEntryById
+  getEntryById : getEntryById,
+  createNewEntry: createNewEntry
 };
